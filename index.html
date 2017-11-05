@@ -70,7 +70,7 @@
         <div class="other-features feature-3">
           <h3>Небольшая площадь</h3>
           <p>-№3-</p>
-          <p>Все достопримечательности находятся очень близко</p
+          <p>Все достопримечательности находятся очень близко</p>
         </div>
         <div class="other-features feature-4">
           <h3>Красивая дорога</h3>
@@ -88,11 +88,16 @@
         <p>Заинтересовались?</p>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a class="hotel-search-link active" href="#">Поиск гостиницы в Седоне</a>
-        <!-- Дописала класс active,чтобы форма поиска была открыта по умолчанию. Сама форма поиска прописана под футером. Она как бы будет прилеплена к этой ссылке снизу. -->
-        <div class="map">
-          <!-- Здесь будет карта -->
+        <!-- Дописала класс active,чтобы форма поиска была открыта по умолчанию.-->
+        <div class="modal modal-hotel-search">
+          <h3 class="visually-hidden">Форма поиска</h3>
+          <!-- Здесь будет форма поиска -->
         </div>
-       </section>
+      </section>
+      <section class="map">
+        <h2 class="visually-hidden">Карта города</h2>
+        <img src="img/map.jpg" alt="Карта">
+      </section>
     </main>
     <footer class="main-footer">
       <b>#visitsedona</b>
@@ -110,9 +115,6 @@
         </a>
       </div>
     </footer>
-    <section class="modal modal-hotel-search">
-      <h2 class="visually-hidden">Форма поиска</h2>
-      <!-- Здесь будет форма поиска -->
-    </section>
+    
   </body>
 </html>
