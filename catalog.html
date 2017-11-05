@@ -24,17 +24,18 @@
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <!-- Здесь будет форма -->
       </section>
-      <output name="amount">
-        <!-- Здесь будет вывод результатов -->
-      </output>
-      <section class="sort">
+      <div class="sort">
+        <span>Найдено:3</span>
         <h2>Сортировка:</h2>
         <ul class="sort-list">
           <li><a class="price" href="#">По цене</a></li>
           <li><a class="type" href="#">По типу</a></li>
           <li><a class="rating" href="#">По рейтингу</a></li>
         </ul>
-      </section>
+        <button class="ascending"><img src="img/ascending-button.svg" alt="&#9650"></button>
+        <button class="descending"><img src="img/descending-button.svg" alt="&#9660"></button>
+        <!-- в кнопках вместо текста использую Unicode-символы -->
+      </div>
       <section class="catalog">
         <h2 class="visually-hidden">Список гостиниц</h2>
         <ul class="catalog-list">
@@ -55,6 +56,9 @@
               <a href="#" class="reserve">Забронировать</a>
             </p>
             <span class="rate">Рейтинг:8,5</span>
+            <span class="rating-image">
+              <img src="img/4-stars.svg" alt="&#9733;&#9733;&#9733;&#9733;">
+            </span>
           </li>
           <!-- 2 -->
           <li class="catalog-item">
@@ -73,6 +77,9 @@
               <a href="#" class="reserve">Забронировать</a>
             </p>
             <span class="rate">Рейтинг:8,9</span>
+            <span class="rating-image">
+              <img src="img/3-stars.svg" alt="&#9733;&#9733;&#9733;">
+            </span>
           </li>
           <!-- 3 -->
           <li class="catalog-item">
@@ -91,6 +98,9 @@
               <a href="#" class="reserve">Забронировать</a>
             </p>
             <span class="rate">Рейтинг:9,2</span>
+            <span class="rating-image">
+              <img src="img/2-stars.svg" alt="&#9733;&#9733;">
+            </span>
           </li>
         </ul>
       </section>
