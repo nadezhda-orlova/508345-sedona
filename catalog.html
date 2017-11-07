@@ -8,7 +8,7 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a class="logo" href="index.html">
-          <img src="img/logo.png" class="main-logo" alt="Логотип городка «Седона»">
+          <img src="img/logo.png" class="main-logo" width="138" height="70" alt="Логотип городка «Седона»">
         </a>
         <ul class="site-navigation">
           <li><a href="info.html">Информация</a></li>
@@ -46,7 +46,7 @@
             </h3>
             <p class="catalog-item-image">
               <a href="catalog-item.html">
-                <img src="img/amara.jpg" alt="Amara Resort & Spa">
+                <img src="img/amara.jpg" width="135" height="90" alt="Amara Resort & Spa">
               </a>
             </p>
             <b>Гостиница</b>
@@ -56,10 +56,13 @@
               <a href="#" class="reserve">Забронировать</a>
             </p>
             <span class="rate">Рейтинг:8,5</span>
-            <p class="rating-image 4-stars">
-              <img src="img/4-stars.png" alt="&#9733;&#9733;&#9733;&#9733;">
-              <!-- Здесь я слила в фотошопе 4 изображения зведочек в один png! -->
-            </p>
+            <ul class="stars 4-stars">
+              <li class="star"></li>
+              <li class="star"></li>
+              <li class="star"></li>
+              <li class="star"></li>
+              <!-- ДЛЯ СЕБЯ:в css классу star присвою background со звездочкой в svg.list-style:none, margin/padding обнулить-->
+            </ul>
           </li>
           <!-- 2 -->
           <li class="catalog-item">
@@ -68,7 +71,7 @@
             </h3>
             <p class="catalog-item-image">
               <a href="catalog-item.html">
-                <img src="img/desert.jpg" alt="Desert Quail Inn">
+                <img src="img/desert.jpg" width="135" height="90" alt="Desert Quail Inn">
               </a>
             </p>
             <b>Мотель</b>
@@ -78,9 +81,12 @@
               <a href="#" class="reserve">Забронировать</a>
             </p>
             <span class="rate">Рейтинг:8,9</span>
-            <p class="rating-image">
-              <img src="img/3-stars.png" alt="&#9733;&#9733;&#9733;">
-            </p>
+            <ul class="stars 3-stars">
+              <li class="star"></li>
+              <li class="star"></li>
+              <li class="star"></li>
+              <!-- в css классу star присвою background со звездочкой в svg -->
+            </ul>
           </li>
           <!-- 3 -->
           <li class="catalog-item">
@@ -89,7 +95,7 @@
             </h3>
             <p class="catalog-item-image">
               <a href="catalog-item.html">
-                <img src="img/villas.jpg" alt="Villas at Poco Diablo">
+                <img src="img/villas.jpg" width="135" height="90" alt="Villas at Poco Diablo">
               </a>
             </p>
             <b>Апартаменты</b>
@@ -99,9 +105,11 @@
               <a href="#" class="reserve">Забронировать</a>
             </p>
             <span class="rate">Рейтинг:9,2</span>
-            <p class="rating-image">
-              <img src="img/2-stars.png" alt="&#9733;&#9733;">
-            </p>
+             <ul class="stars 2-stars">
+              <li class="star"></li>
+              <li class="star"></li>
+              <!-- в css классу star присвою background со звездочкой в svg -->
+            </ul>
           </li>
         </ul>
       </section>
