@@ -23,6 +23,45 @@
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <!-- Здесь будет форма -->
+        <!--  -->
+        <fieldset>
+          <legend>Инфраструктура:</legend>
+          <p>
+            <input type="checkbox" name="pool" id="pool-field" checked>
+            <label for="pool-field">бассейн</label>
+          </p>
+          <p>
+            <input type="checkbox" name="parking" id="parking-field">
+            <label for="parking-field">парковка</label>
+          </p>
+          <p>
+            <input type="checkbox" name="wifi" id="wifi-field">
+            <label for="wifi-field">wi-fi</label>
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Тип жилья:</legend>
+          <p>
+            <input type="checkbox" name="hotel" id="hotel-field" checked>
+            <label for="hotel-field">гостиница</label>
+          </p>
+          <p>
+            <input type="checkbox" name="motel" id="motel-field" checked>
+            <label for="motel-field">мотель</label>
+          </p>
+          <p>
+            <input type="checkbox" name="apartments" id="apartments-field" checked>
+            <label for="apartments">апартаменты</label>
+          </p>
+        </fieldset>
+        <fieldset>
+        <legend>Стоимость в сутки (p):</legend>
+         0 <input type="range" id="daycost name="daycost" min="0" max="3000" step="0"> 3000
+        </fieldset>
+        <div class="buttons">
+                    <input type="submit" value="Показать">
+        </div>
+        <!--  -->
       </section>
       <div class="sort">
         <span>Найдено:3</span>
