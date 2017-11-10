@@ -91,18 +91,25 @@
         <!-- Дописала класс active,чтобы форма поиска была открыта по умолчанию.-->
         <div class="modal modal-hotel-search">
           <h3 class="visually-hidden">Форма поиска</h3>
-          <!-- Здесь будет форма поиска -->
-          <!--  -->
+          
+          
+          <form class="search" method="get" action="https://echo.htmlacademy.ru">
           <p>
-            <label for="date">Дата заезда:</label> 
-            <input type="date" name="date" value="2017-04-24">
+            <label for="search-arrival">Дата заезда:</label> 
+            <input type="text" name="arrival" id="search-arrival" value="24 апреля 2017">
           </p>
           <p>
-            <label for="date">Дата выезда:</label> 
-            <input type="date" name="date" value="2017-07-04">
+            <label for="search-departure">Дата выезда:</label> 
+            <input type="text" name="departure" id="search-departure" value="4 июля 2017">
           </p>
-          <input type="submit" value="Найти">
-          <!--  -->
+          <p>
+          <label for="search-adults">Взрослые:</label>
+          <input type="text" id="search-adults" name="adults" value="2">
+          <label for="search-children">Дети:</label>
+          <input type="text" id="search-children" name="children" value="0">
+          </p>
+          <button type="submit">Найти</button>
+          </form>
         </div>
       </section>
       <section class="map">
@@ -118,9 +125,9 @@
       <b>#visitsedona</b>
       <div class="footer-social">
         <ul>
-          <li><a href="#">Твитер</a></li>
-          <li><a href="#">Фейсбук</a></li>
-          <li><a href="#">Ютуб</a></li>
+          <li><a href="#"><span class="visually-hidden">Твиттер</span></a></li>
+          <li><a href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+          <li><a href="#"><span class="visually-hidden">Ютуб</span></a></li>
         </ul>
       </div>
       <div class="footer-copyright">
