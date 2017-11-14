@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #333333;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: #000000;
+}
+
+.site-navigation a:hover {
+  color: #81b3d2;
+}
+
+.site-navigation a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.description {
+text-align: center;
+}
+
+.description b {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.description p {
+  line-height: 26px;
+}
+
+.feature-1-description,
+.feature-2-description {
+text-align: center;
+background-color:#81b3d2;
+}
+
+.feature-1-description h3,
+.feature-2-description h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight:700;
+  color: #ffffff;
+}
+
+.feature-1-description p,
+.feature-2-description p {
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.detail {
+text-align: center;
+}
+
+.detail h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.detail p{
+  line-height: 21px;
+}
+
+.feature-3-4-5 {
+background-color: #eeeeee;
+}
+
+.other-features {
+text-align: center;
+}
+
+.other-features h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.other-features p {
+  line-height: 21px;
+}
+
+.hotel-search {
+text-align: center;
+}
+
+.hotel-search .question {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+}
+
+a.search-link {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #766357;
+}
+
+a.search-link:hover {
+background-color: #604e43;
+}
+
+a.search-link:active {
+color: rgba(255, 255, 255, 0.3);
+background-color: #503e33;
+}
+
+.modal-search {
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+.search input[type="text"] {
+font: inherit;
+color: #000000;
+text-transform: uppercase;
+background-color:#f2f2f2;
+border:none;
+}
+
+.search button[type="submit"] {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #81b3d2;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+}
+
+.search button[type="submit"]:hover {
+background-color:#669ec0;
+}
+
+.search button[type="submit"]:active {
+color: rgba(255, 255, 255, 0.3);
+background-color:#5496bd;
+}
+
+.map {
+background-color: red
+background-image: url("img/map.jpg");
+background-position: top center;
+background-repeat: no-repeat;
+background-size: auto auto;
+}
