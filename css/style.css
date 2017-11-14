@@ -141,11 +141,11 @@ background-color: #503e33;
   color: #000000;
 }
 .search input[type="text"] {
-font: inherit;
-color: #000000;
-text-transform: uppercase;
-background-color:#f2f2f2;
-border:none;
+  font: inherit;
+  color: #000000;
+  text-transform: uppercase;
+  background-color:#f2f2f2;
+  border:none;
 }
 
 .search button[type="submit"] {
@@ -165,14 +165,79 @@ background-color:#669ec0;
 }
 
 .search button[type="submit"]:active {
-color: rgba(255, 255, 255, 0.3);
-background-color:#5496bd;
+  color: rgba(255, 255, 255, 0.3);
+  background-color:#5496bd;
 }
 
 .map {
-background-color: red
-background-image: url("img/map.jpg");
-background-position: top center;
-background-repeat: no-repeat;
-background-size: auto auto;
+  width: 1200px;
+  height: 593px;
+  background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
 }
+
+.map iframe {
+  width:1200px;
+  height:593px;
+  border:0;
+}
+/*iframe сейчас съезжает вниз из-за заголовка "Карта города"*/
+.main-footer {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.main-footer b {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.footer-social a {
+  background-color: #81b3d2;
+}
+
+.footer-social a:hover {
+  background-color: #669ec0;
+}
+
+.footer-social a:active {
+  background-color: #5496bd;
+}
+
+.social-link svg {
+  fill:#ffffff;
+}
+
+.social-link svg:active {
+  fill:rgba(255, 255, 255, 0.3);
+}
+
+.footer-copyright {
+  text-align: center;
+}
+
+.footer-copyright span {
+  line-height: 26px;
+  color: #000000;
+}
+
+.copyright-link svg {
+  fill: #231f20;
+}
+
+.copyright-link svg:hover {
+  fill: #81b3d2;
+}
+
+.copyright-link svg:active {
+  fill: #bdbbbc;
+}
+
+
+
+
