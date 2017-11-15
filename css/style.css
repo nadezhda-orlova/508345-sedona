@@ -38,6 +38,35 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.intro {
+  position: relative;
+  width: 1200px;
+  height: 773px;
+  background-color: #81b3d2;
+  background-image: url("../img/background-photo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.text {
+  position: absolute;
+  top: 130px;
+  left: 370px;
+  width: 458px;
+  height: 352px;
+  background-image: url("../img/welcome.png");
+}
+
+.mask {
+  position: absolute;
+  bottom: 0px;
+  width: 1200px;
+  height: 273px;
+  background-image: url("../img/mask.png");
+  background-repeat: no-repeat;
+}
+
+
 .description {
 text-align: center;
 }
@@ -88,6 +117,25 @@ text-align: center;
   line-height: 21px;
 }
 
+.detail-1 {
+  background-image: url("../img/icon-1.svg");
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+.detail-2 {
+  background-image: url("../img/icon-2.svg");
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+.detail-3 {
+  background-image: url("../img/icon-3.svg");
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+
 .feature-3-4-5 {
 background-color: #eeeeee;
 }
@@ -118,7 +166,7 @@ text-align: center;
   color: #000000;
 }
 
-a.search-link {
+.hotel-search a {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -126,11 +174,11 @@ a.search-link {
   background-color: #766357;
 }
 
-a.search-link:hover {
+.hotel-search a:hover {
 background-color: #604e43;
 }
 
-a.search-link:active {
+.hotel-search a:active {
 color: rgba(255, 255, 255, 0.3);
 background-color: #503e33;
 }
@@ -144,6 +192,13 @@ background-color: #503e33;
   font: inherit;
   color: #000000;
   text-transform: uppercase;
+  background-color:#f2f2f2;
+  border:none;
+}
+
+.search .minus,
+.search .plus {
+  color:#818181;
   background-color:#f2f2f2;
   border:none;
 }
@@ -195,6 +250,7 @@ background-color:#669ec0;
 
 .footer-social ul {
   list-style: none;
+  text-align:center;
 }
 
 .footer-social a {
@@ -238,6 +294,216 @@ background-color:#669ec0;
   fill: #bdbbbc;
 }
 
+.site-navigation-current a{
+  color: #766357;
+}
 
+.filter {
+  color: #ffffff;
+  background-image:url("../img/filter-background.jpg");
+  background-repeat: no-repeat;
+}
 
+.filter fieldset {
+  border: none;
+}
 
+.filter legend {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.filter p {
+  line-height: 21px;
+  color: #ffffff;
+}
+.filter input[type="text"] {
+  font: inherit;
+  line-height: 21px;
+  text-align: center;
+  /*я так поняла, что наследование свойств текста произошло от body*/
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+}
+/*ползунок пока скопиривала и примерно стилизовала*/
+.skroll {
+  width: 317px;
+  background: #7a797b;
+  height: 2px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.skroll-left,
+.skroll-right {
+  position: absolute;
+  display: block;
+  width: 20px;
+  background: #ffffff;
+  height: 20px;
+  border-radius: 50%;
+  top: -8px;
+  z-index: 1;
+  border: none;
+}
+
+.skroll-left {
+  left: 0px;
+}
+
+.skroll-right {
+  right: 55px;
+}
+
+.skroll-field {
+  width: 262px;
+  height: 2px;
+  background: #ffffff;
+  position: absolute;
+  left: 0px;
+}
+
+.filter button[type="submit"] {
+  line-height: 21px;
+  color: #ffffff;
+  background-color: transparent;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: 2px solid #ffffff;
+}
+
+.sort span {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.sort h2 {
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+  font-weight: 400;
+}
+
+.sort ul {
+  list-style: none;
+}
+
+.sort a {
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: 400;
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.sort a:hover {
+  color:#81b3d2;
+}
+
+.sort a:active {
+  color: #000000;
+  border-bottom: none;
+}
+
+.sort button  {
+  background-color: transparent;
+  border: none;
+
+}
+
+.ascending svg,
+.descending svg {
+  fill:#cacaca;
+}
+
+.ascending svg:hover,
+.descending svg:hover {
+  fill: #231f20;
+}
+
+.ascending svg:active,
+.descending svg:active {
+  fill: #81b3d2;
+  border:none;
+}
+/*стилизация кнопки при наведении и нажатии не оторажается в firefox, при нажатии появляется голубая обводка*/
+
+.catalog-list {
+  list-style: none
+}
+
+.catalog-list .name {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color:#000000;
+}
+
+.catalog-list .name:hover {
+  color:#81b3d2;
+}
+
+.catalog-list .name:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.catalog-item b {
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.catalog-item-reserve a:first-child {
+  line-height: 21px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.catalog-item-reserve a:nth-child(2) {
+  line-height: 21px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #766357;
+}
+
+.catalog-item-reserve a:first-child:hover {
+  background-color: #669ec0;
+}
+
+.catalog-item-reserve a:nth-child(2):hover {
+  background-color: #604e43;
+}
+
+.catalog-item-reserve a:first-child:active {
+  color:rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+
+.catalog-item-reserve a:nth-child(2):active {
+  color:rgba(255, 255, 255, 0.3);
+  background-color: #503e33;
+}
+
+.catalog-item span {
+  line-height: 21px;
+  color: #666666;
+  background-color: #f2f2f2;
+}
+
+.stars {
+  list-style: none;
+}
+
+.stars li {
+  width:18px;
+  height:18px;
+  background-image: url("../img/star.svg");
+  background-repeat:no-repeat;
+}
