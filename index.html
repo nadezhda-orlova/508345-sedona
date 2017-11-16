@@ -24,14 +24,12 @@
     <main class="container">
       <h1 class="visually-hidden">Городок «Седона»</h1>
       <div class="intro">
-        <div class="mask"></div>
-        <div class="text"></div>
-         <!-- Здесь будет background-image c горами и img с приветствием, названием и слоганом поверх него -->
+        <img src="img/welcome.png" width="458" height="352" alt="Welcome to Sedona">
       </div>
-      <div class="description">
+       <div class="description">
         <b>Седона - небольшой городок в Аризоне, заслуживающий большего!</b>
         <p> Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-      </div>
+      </div> 
       <section class="feature-1">
         <h2 class="visually-hidden">Первое преимущество</h2>
         <div class="feature-1-description">
@@ -101,20 +99,20 @@
           <form class="search" method="get" action="https://echo.htmlacademy.ru">
           <p>
             <label for="search-arrival">Дата заезда:</label> 
-            <input type="text" name="arrival" id="search-arrival" value="24 апреля 2017">
+            <input type="text" name="arrival" id="search-arrival" placeholder="24 апреля 2017">
           </p>
           <p>
             <label for="search-departure">Дата выезда:</label> 
-            <input type="text" name="departure" id="search-departure" value="4 июля 2017">
+            <input type="text" name="departure" id="search-departure" placeholder="4 июля 2017">
           </p>
           <p>
           <label for="search-adults">Взрослые:</label>
           <button type="button" class="minus">меньше</button>
-          <input type="text" id="search-adults" name="adults" value="2">
+          <input type="text" id="search-adults" name="adults" placeholder="2">
           <button type="button" class="plus">больше</button>
           <label for="search-children">Дети:</label>
           <button type="button" class="minus">меньше</button>
-          <input type="text" id="search-children" name="children" value="0">
+          <input type="text" id="search-children" name="children" placeholder="0">
           <button type="button" class="plus">больше</button>
           </p>
           <button type="submit">Найти</button>

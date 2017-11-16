@@ -48,24 +48,13 @@ a {
   background-position: center;
 }
 
-.text {
+.intro img {
+  display: block;
   position: absolute;
   top: 130px;
   left: 370px;
-  width: 458px;
-  height: 352px;
-  background-image: url("../img/welcome.png");
-}
 
-.mask {
-  position: absolute;
-  bottom: 0px;
-  width: 1200px;
-  height: 273px;
-  background-image: url("../img/mask.png");
-  background-repeat: no-repeat;
 }
-
 
 .description {
 text-align: center;
@@ -116,25 +105,6 @@ text-align: center;
 .detail p{
   line-height: 21px;
 }
-
-.detail-1 {
-  background-image: url("../img/icon-1.svg");
-  background-repeat:no-repeat;
-  background-position: center;
-}
-
-.detail-2 {
-  background-image: url("../img/icon-2.svg");
-  background-repeat:no-repeat;
-  background-position: center;
-}
-
-.detail-3 {
-  background-image: url("../img/icon-3.svg");
-  background-repeat:no-repeat;
-  background-position: center;
-}
-
 
 .feature-3-4-5 {
 background-color: #eeeeee;
@@ -502,8 +472,7 @@ background-color:#669ec0;
 }
 
 .stars li {
-  width:18px;
-  height:18px;
+  font-size:0;
   background-image: url("../img/star.svg");
   background-repeat:no-repeat;
 }
