@@ -10,6 +10,10 @@ body {
   text-transform: uppercase;
 
   background-color: #ffffff;
+  /*для сетки*/
+  background-image: url("../img/sedona-index-1200-for-flex.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 
 a {
@@ -38,7 +42,7 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.intro {
+/*.intro {
   position: relative;
   width: 1200px;
   height: 773px;
@@ -54,7 +58,7 @@ a {
   top: 130px;
   left: 370px;
 
-}
+}*/
 
 .description {
 text-align: center;
@@ -475,4 +479,420 @@ background-color:#669ec0;
   font-size:0;
   background-image: url("../img/star.svg");
   background-repeat:no-repeat;
+}
+
+/*для сетки*/
+.main-header {
+  width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 0px;
+  /* Временно для сетки */
+  min-height: 56px;
+}
+
+.main-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* Временно для сетки */
+  min-height: 56px;
+}
+
+.site-navigation {
+  margin: 0;
+  padding: 0;
+  width: 1200px;
+  list-style: none;
+  /* Временно для сетки */
+  min-height: 56px;
+}
+
+.site-navigation-wrapper {
+  width: 1200px;
+  margin-bottom: 0px;
+  /* Временно для сетки */
+  min-height: 56px;
+  background-color: transparent;
+}
+
+.logo {
+  position:absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 138px;
+  height: 70px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 0px;
+}
+
+.intro {
+  display: flex;
+  height: 505px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0px;
+  /*Для центровки текста:*/
+  padding-bottom: 5px;
+  box-sizing: border-box;
+  /*background-color: #81b3d2;*/
+  /*background-image: url("../img/background-photo.jpg");*/
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0px;
+  box-sizing:border-box;
+  /*Временно для сетки */
+  min-height: 216px;
+}
+
+.description b {
+  margin-top: 60px;
+  width:575px;
+}
+
+.description p {
+  margin-top: 25px;
+  width: 575px;
+}
+
+.features-list {
+  
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /*Временно для сетки*/
+  min-height: 1100px;
+}
+
+.feature-1 {
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 0px;
+  box-sizing: border-box;
+  /*временно для сетки*/
+  min-height: 256px;
+  
+}
+
+.feature-1-description {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  /*временно для сетки*/
+  min-height: 256px;
+  background-color:transparent;
+}
+
+.feature-1-description h3 {
+  width: 240px;
+  margin-top: 47px;
+}
+
+.feature-1-description p:first-of-type {
+  width: 240px;
+  margin-top: 2px;
+  
+ }
+
+
+.feature-1-description p:nth-of-type(2) {
+  width: 285px;
+  margin-top: 7px ;
+  
+}
+
+
+.feature-1-image {
+  width: 800px;
+
+  /*временно для сетки*/
+  min-height: 256px;
+}
+
+.feature-1-details {
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 0px;
+  /*временно для сетки*/
+  min-height:330px;
+  
+}
+
+.detail-1 {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*временно для сетки*/
+  min-height: 330px;
+}
+
+.detail-1 h3 {
+  width: 240px;
+  margin-top: 155px;
+}
+
+.detail-1 p {
+  width:255px;
+  margin-top: 0px;
+}
+
+
+.detail-2 {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*временно для сетки*/
+  min-height: 330px;
+}
+
+.detail-2 h3 {
+  width: 240px;
+  margin-top: 155px;
+}
+
+.detail-2 p {
+  width: 290px;
+  margin-top: 0px;
+}
+
+
+.detail-3 {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*временно для сетки*/
+  min-height: 330px;
+}
+
+.detail-3 h3 {
+  width: 240px;
+  margin-top: 155px;
+}
+
+.detail-3 p {
+  width: 280px;
+  margin-top: 0px;
+}
+
+
+.feature-2 {
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 0px;
+  /*временно для сетки*/
+  min-height: 256px;
+
+}
+
+.feature-2-image {
+  width: 800px;
+  /*временно для сетки*/
+  min-height: 256px;
+}
+
+.feature-2-description {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  /*временно для сетки*/
+  min-height:  256px;
+  background-color:transparent;
+}
+
+.feature-2-description h3 {
+  width: 240px;
+  margin-top: 37px;
+}
+
+.feature-2-description p:first-of-type {
+  width: 240px;
+  margin-top: 2px;
+  
+ }
+
+
+.feature-2-description p:nth-of-type(2) {
+  width: 305px;
+  margin-top: 10px ;
+  
+}
+
+
+.feature-3-4-5 {
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 0px;
+  /*временно для сетки*/
+  min-height: 256px;
+  background-color:transparent;
+}
+
+.feature-3 {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  /*временно для сетки*/
+  min-height: 256px;
+}
+
+.feature-3 h3 {
+  width: 130px;
+  margin-top: 35px;
+}
+
+.feature-3 p:first-of-type {
+  width: 240px;
+  margin-top: 0px;
+}
+
+.feature-3 p:nth-of-type(2){
+  width: 240px;
+  margin-top: 10px;
+}
+
+
+.feature-4 {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  /*временно для сетки*/
+  min-height: 256px;
+}
+
+.feature-4 h3 {
+  width: 130px;
+  margin-top: 35px;
+}
+
+.feature-4 p:first-of-type {
+  width: 240px;
+  margin-top: 0px;
+}
+
+.feature-4 p:nth-of-type(2){
+  width: 270px;
+  margin-top: 10px;
+}
+
+.feature-5 {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  /*временно для сетки*/
+  min-height: 256px;
+}
+
+.feature-5 h3 {
+  width: 130px;
+  margin-top: 35px;
+}
+
+.feature-5 p:first-of-type {
+  width: 240px;
+  margin-top: 0px;
+}
+
+.feature-5 p:nth-of-type(2){
+  width: 270px;
+  margin-top: 10px;
+}
+
+.hotel-search {
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0px;
+  box-sizing:border-box;
+  padding-top: 5px;
+  /*временно для сетки*/
+  min-height: 290px;
+}
+
+.hotel-search p:first-child {
+  width: 400px;
+  margin-bottom: 10px;
+}
+
+.hotel-search p:nth-child(2) {
+  width:576px;
+  margin-bottom: 48px;
+}
+
+.hotel-search a {
+  width: 568px;
+  min-height: 86px;
+  box-sizing: border-box;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color:transparent;
+}
+
+.map {
+  width: 1200px;
+  display: flex;
+  margin-bottom: 0px;
+  /*временно для сетки*/
+  min-height: 593px
+}
+
+.main-footer {
+  width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  /*временно для сетки*/
+  min-height: 120px;
+  background-color:transparent;
+}
+
+.main-footer b {
+  width: 240px;
+}
+
+.footer-social {
+  width: 150px;
+/*временно для сетки*/
+  min-height: 48px;
+}
+
+.footer-copyright {
+  width: 241px;
+/*временно для сетки*/
+  min-height: 45px;
 }
