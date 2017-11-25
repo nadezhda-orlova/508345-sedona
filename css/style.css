@@ -16,19 +16,23 @@ body {
   background-repeat: no-repeat;
 }
 
+.wrapper {
+  width: 1200px;
+  margin: auto;
+}
+
 a {
   text-decoration: none;
 }
 
 .header-container {
   position: relative;
-  width: 1200px;
   margin: 0px auto;
-  background-color: #fff;
+/*  background-color: #fff;*/
 }
 
 .section-container {
-  padding: 0px 6%;
+  padding: 0 6%;
 }
 
 .main-navigation {
@@ -63,7 +67,7 @@ a {
   box-sizing: border-box;
   display: block;
   width: 20%;
-  margin: 14px 0 16px;
+  margin: 14px 0px 16px;
 }
 
 .link-left {
@@ -85,7 +89,6 @@ a {
 }
 
 .container {
-  width:1200px;
   margin: 0px auto;
   padding: 0px 0px; 
 }
@@ -236,14 +239,20 @@ a {
   margin: 0px;
 }
 
-.detail-1 h3 {
+.feature-1-details h3{
+  position: relative;
   margin-top: 160px;
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
   color: #000000;
-
 }
+
+/*.feature-1-details h3::after {
+  content: "";
+  position: absolute;
+}
+*/
 
 .detail-1 p {
   margin-top: 23px;
@@ -252,26 +261,10 @@ a {
 
 }
 
-.detail-2 h3 {
-  margin-top: 160px;
-  font-size: 21px;
-  line-height: 21px;
-  font-weight: 700;
-  color: #000000;
-}
-
 .detail-2 p {
   margin-top: 23px;
   padding: 0px 50px;
   line-height: 21px;
-}
-
-.detail-3 h3 {
-  margin-top: 160px;
-  font-size: 21px;
-  line-height: 21px;
-  font-weight: 700;
-  color: #000000;
 }
 
 .detail-3 p {
@@ -534,7 +527,6 @@ background-color:#669ec0;
 }
 
 .main-footer {
-  width:1200px;
   margin: 0px auto;
   margin-bottom: 0px;
   display: flex;
@@ -967,7 +959,7 @@ margin-left: 40px;
 }
 
 .item-container h3 {
-  margin-top: 22px;
+/*  margin-top: 22px;*/
   margin-left: 2px;
 }
 
@@ -996,7 +988,7 @@ margin-left: 40px;
 
 
 .catalog-item p {
-  margin-top:6px;
+/*  margin-top:6px;*/
 }
 
 .catalog-item-reserve a {
@@ -1050,9 +1042,8 @@ margin-left: 40px;
   color: #666666;
   background-color: #f2f2f2;
   display:inline-block;
-  margin-top: 42px;
+ margin-top: 42px;
   margin-left: 19px;
-
   padding: 1px 13px;
   /* не получилось вплотную прижать спан к звездочкам, чтобы замерить отступ в фотошопе, пришлом подбирать на глаз*/
 }
