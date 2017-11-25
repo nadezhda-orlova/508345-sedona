@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/outline.css" rel="stylesheet">
+<!--     <link href="css/outline.css" rel="stylesheet"> -->
   </head>
   <body>
     <div class="header-container">
@@ -19,16 +19,16 @@
               </a>
             </div>
             <ul class="site-navigation">
-              <li class="site-navigation-link-left">
+              <li class="link-left">
                 <a href="info.html">Информация</a>
               </li>
-              <li class="site-navigation-link-left">
+              <li class="link-left">
                 <a href="media.html">Фото и видео</a>
               </li>
-              <li class="site-navigation-link-right">
+              <li class="link-right">
                 <a href="map.html">Карта штата</a>
               </li>
-              <li class="site-navigation-link-right">
+              <li class="link-right">
                 <a href="hotels.html">Гостиницы</a>
               </li>
             </ul>
@@ -42,7 +42,7 @@
         <img src="img/welcome.png" width="458" height="352" alt="Welcome to Sedona">
       </div> 
       <div class="description">
-        <b>Седона — небольшой городок в Аризоне, заслуживающий большего!</b>
+        <p>Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
         <p> Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </div> 
       <section class="features-list">
@@ -50,7 +50,7 @@
         <!-- <h2 class="visually-hidden">Первое преимущество</h2> -->
           <div class="feature-1-description">
             <h3>Настоящий<br>городок</h3>
-            <p>— №1 —</p>
+            <span>— №1 —</span>
             <p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
           </div> 
           <div class="feature-1-image">
@@ -59,15 +59,15 @@
         </section>
         <section class="feature-1-details">
         <!-- <h2 class="visually-hidden">Подробнее о первом преимуществе</h2> -->
-          <div class="detail detail-1">
+          <div class="detail-1">
             <h3>Жилье</h3>
             <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </div>
-          <div class="detail detail-2">
+          <div class="detail-2">
             <h3>Еда</h3>
             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </div>
-          <div class="detail detail-3">
+          <div class="detail-3">
             <h3>Cувениры</h3>
             <p>Не только китайского, но и местного производства!</p>
           </div>
@@ -79,7 +79,7 @@
           </div>
           <div class="feature-2-description">
             <h3>Там есть<br>мост дьявола</h3>
-            <p>— №2 —</p>
+            <span>— №2 —</span>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
         </section>
@@ -88,17 +88,17 @@
         </h2> -->
           <div class="other-features feature-3">
             <h3>Небольшая площадь</h3>
-            <p>— №3 —</p>
+            <span>— №3 —</span>
             <p>Все достопримечательности находятся очень близко</p> 
           </div>
           <div class="other-features feature-4">
             <h3>Красивая дорога</h3>
-            <p>— №4 —</p>
+            <span>— №4 —</span>
             <p>Ехать в седону из Лас-Вегаса совсем не скучно!</p>
           </div>
           <div class="other-features feature-5">
             <h3>Мало туристов</h3>
-            <p>— №5 —</p>
+            <span>— №5 —</span>
             <p>Большинство едет в Гранд Каньон и толпится там</p> 
           </div>
         </section> 
@@ -148,7 +148,7 @@
     <footer class="main-footer">
       <b>#visitsedona</b>
       <div class="footer-social">
-        <!-- <ul>
+        <ul>
           <li><a class="social-link" href="#" aria-label="Твиттер"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15"><path d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/></svg></a>
           </li>
           <li>
@@ -158,7 +158,7 @@
             <a class="social-link" href="#" aria-label="Ютуб"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16"><path d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/></svg></a>
           </li>
           
-        </ul> -->
+        </ul>
       </div>
       <div class="footer-copyright">
         <span>webside by</span>
