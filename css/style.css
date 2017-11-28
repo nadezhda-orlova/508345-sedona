@@ -686,10 +686,6 @@ background-color:#669ec0;
   margin-bottom: 0px;
 }
 
-.filter input[type="checkbox"] {
-display: none ;
-
-}
 
 .fieldset-1 label,
 .fieldset-2 label {
@@ -697,56 +693,43 @@ display: none ;
   cursor: pointer;
 }
 
-.fieldset-1 input[type="checkbox"] + .checkbox-indicator {
+.fieldset-1 input[type="checkbox"] + .checkbox-indicator,
+.fieldset-2 input[type="checkbox"] + .checkbox-indicator {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 23px;
   height: 23px;
-  background: url("../img/checkbox-off.svg") no-repeat
+  background: url("../img/checkbox-off.svg") no-repeat;
+  cursor: pointer;
 }
 
-.fieldset-1 input[type="checkbox"]:focus + .checkbox-indicator {
+.fieldset-1 input[type="checkbox"]:focus + .checkbox-indicator,
+.fieldset-2 input[type="checkbox"]:focus + .checkbox-indicator {
   border-color: #663d15;
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
 }
 
-
-.fieldset-1 label::before,
-.fieldset-2 label::before {
-  content: "";
-  position: absolute;
-  top: -1px;
-  z-index: 1;
-  width: 23px;
-  height: 23px;
-  background: url("../img/checkbox-off.svg") no-repeat;
-}
-
-.fieldset-1 label::before {
-  left: -38px;
-}
-
-.fieldset-2 label::before {
-  left: -40px;
-}
-
-.fieldset-1 input[type="checkbox"]:checked ~ label::before,
-.fieldset-2 input[type="checkbox"]:checked ~ label::before {
+.fieldset-1 input[type="checkbox"]:checked + .checkbox-indicator,
+.fieldset-2 input[type="checkbox"]:checked + .checkbox-indicator {
   width: 27px;
   height: 23px;
   background: url("../img/checkbox-on.svg") no-repeat;
 }
 
-
-.fieldset-1 input[type="checkbox"]:disabled ~ label::before,
-.fieldset-2 input[type="checkbox"]:disabled ~ label::before {
+.fieldset-1 input[type="checkbox"]:disabled .checkbox-indicator,
+.fieldset-2 input[type="checkbox"]:disabled .checkbox-indicator {
   width: 23px;
   height: 23px;
   background: url("../img/checkbox-ofF-disabled.svg") no-repeat;
 }
 
+.fieldset-1 .checkbox-indicator {
+  left: -38px;
+}
+
+.fieldset-2 .checkbox-indicator {
+  left: -40px;
+}
 
 
 
