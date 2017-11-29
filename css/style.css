@@ -16,7 +16,8 @@ body {
   width: 1200px;
   margin: auto;
   background-color: #ffffff;
-  box-shadow: 0 0 20px -12px #000000;
+  box-shadow: 0 0 40px 2px #dbdbdb;
+/*  box-shadow: 0 0 20px -12px #000000;*/
 }
 
 a {
@@ -493,7 +494,7 @@ input[type="radio"].visually-hidden {
 }
 
 .hotel-search p {
-margin-top: 23px;
+  margin-top: 23px;
 }
 
 .hotel-search a {
@@ -522,14 +523,47 @@ background-color: #503e33;
   line-height: 26px;
   font-weight: 700;
   color: #000000;
+  background-color: #ffffff;
+  box-shadow: 0 0 25px -8px #000000;
+  width: 568px;
+  box-sizing: border-box;
+  padding: 54px 55px;
+  position:absolute;
+  left:50%;
+  margin-left: -284px;
 }
-.search input[type="text"] {
+
+.modal-search p {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.modal-search p:last-of-type {
+  margin: 0;
+  margin-bottom: 58px;
+}
+
+.search .data {
+  box-sizing: border-box;
+  width: 346px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 13px;
+  padding-right: 40px;
   font: inherit;
   color: #000000;
   text-transform: uppercase;
   background-color:#f2f2f2;
   border:none;
 }
+
+.search label:first-of-type {
+  margin-right: 16px;
+}
+
+
+
+
 
 .search .minus,
 .search .plus {
@@ -539,6 +573,10 @@ background-color: #503e33;
 }
 
 .search button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -548,6 +586,7 @@ background-color: #503e33;
   vertical-align: middle;
   text-transform: uppercase;
   border: none;
+
 }
 
 .search button[type="submit"]:hover {
@@ -684,7 +723,6 @@ background-color:#669ec0;
   margin-bottom: 0px;
 }
 
-
 .fieldset-1 label,
 .fieldset-2 label {
   position: relative;
@@ -786,8 +824,6 @@ padding-left:50px;
 .fieldset-2 p {
 padding-left:62px;
 }
-
-
 
 .filter-range {
   width: 318px;
@@ -958,7 +994,7 @@ padding-left:62px;
   
 }
 
-.sort a {
+.sort-list a {
   font-size: 12px;
   line-height: 18px;
   color: rgba(0, 0, 0, 0.3);
@@ -1009,6 +1045,21 @@ margin-left: 40px;
 .sort a:nth-of-type(2)  {
   margin-right:60px;
 }
+
+.sort-buttons {
+  margin-left: auto; 
+  padding-right: 13px;*
+}
+
+.sort-buttons a {
+  display: inline-block;
+  vertical-align: center;
+}
+
+.ascending {
+  margin-right: 8px;
+}
+
 
  .ascending svg,
  .descending svg {
