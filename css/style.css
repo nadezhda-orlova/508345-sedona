@@ -527,7 +527,7 @@ background-color: #503e33;
   box-shadow: 0 0 25px -8px #000000;
   width: 568px;
   box-sizing: border-box;
-  padding: 54px 55px;
+  padding: 55px 55px;
   position:absolute;
   left:50%;
   margin-left: -284px;
@@ -538,10 +538,6 @@ background-color: #503e33;
   margin-bottom: 30px;
 }
 
-.modal-search p:last-of-type {
-  margin: 0;
-  margin-bottom: 58px;
-}
 
 .search .data {
   box-sizing: border-box;
@@ -554,29 +550,120 @@ background-color: #503e33;
   color: #000000;
   text-transform: uppercase;
   background-color:#f2f2f2;
+  background-image: url("../img/calendar.svg");
+  background-repeat: no-repeat;
+  background-position: 317px center;
   border:none;
 }
 
-.search label:first-of-type {
-  margin-right: 16px;
+.search .data-label-1 {
+  margin-right: 18px;
+}
+
+.search .data-label-2 {
+  margin-right: 13px;
+}
+
+.search .data:hover {
+  background-color: #ebebeb;
+  background-image: url("../img/calendar-hover.svg");
+}
+
+.search .data:focus {
+  background-color: #ffffff;
+  outline: 2px solid #ebebeb;
 }
 
 
-
+.search .data:active {
+  background-color:#f2f2f2;
+  outline: 2px solid #ebebeb;
+  background-image: url("../img/calendar-active.svg");
+}
 
 
 .search .minus,
 .search .plus {
+  width:38px;
+  height:38px;
   color:#818181;
   background-color:#f2f2f2;
   border:none;
 }
 
+.minus {
+background-image: url("../img/minus.png");
+background-repeat: no-repeat;
+background-position: 13px 18px;
+}
+
+.plus {
+background-image: url("../img/plus.png");
+background-repeat: no-repeat;
+background-position: 13px 13px;
+}
+
+.minus:hover {
+background-image: url("../img/minus-hover.png");
+}
+
+.plus:hover {
+background-image: url("../img/plus-hover.png");
+}
+
+.minus:active {
+background-image: url("../img/minus-active.png");
+}
+
+.plus:active {
+background-image: url("../img/plus-active.png");
+}
+
+.people-amount {
+  display: flex;
+  justify-content: center;
+  width:38px;
+  height:38px;
+  box-sizing: border-box;
+  border:none;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+.counter-box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 54px;
+
+
+}
+
+.counter {
+ display: flex;
+ align-items: center
+ 
+}
+
+
+.counter .adults {
+  margin-right: 41px;
+}
+
+.counter .children {
+  margin-right: 25px;
+}
+
+
+
+
+
+
+
 .search button[type="submit"] {
   display: block;
   width: 100%;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding: 15px 0px;
+  
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -614,47 +701,47 @@ background-color:#669ec0;
 }
 
 .main-footer {
-  margin: 0px auto;
-  margin-bottom: 0px;
+  bottom: 0px;
   display: flex;
   align-items: center;
   min-height: 120px;
-  background-color:rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
-.main-footer b {
-  margin-left:132px;
-  width: 138px;
+.main-footer .footer-block {
+  width: 400px;
+}
+
+
+
+.hashtag {
+  padding-left: 133px;
+  box-sizing: border-box;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  color: #000000;
-}
-
-.footer-social {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-left: 255px;
-  width: 150px;
-  min-height: 48px;
 }
 
 .footer-social ul {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 150px;
+  height: 48px;
+  margin: 0 auto;
+  padding: 0;
   list-style: none;
-  width: 150px
-  margin: 0px auto;
-  padding: 0px;
 }
 
 .footer-social a {
-  display:flex;
-  align-items: center;
-  justify-content: center;
+  display: flex;
   width: 46px;
   height: 48px;
+  justify-content: center;
+  align-items: center;
+  font: inherit;
+  color: #ffffff;
   background-color: #81b3d2;
 }
 
@@ -678,25 +765,13 @@ background-color:#669ec0;
   display: flex;
   justify-content: center;
   align-items: center;
-  width:200px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-left: auto;
-  margin-right: 101px;
-}
-
-.footer-copyright span {
-  line-height: 26px;
-  color: #000000;
-  width: 241px;
-  display: block
-  margin-bottom: 30px;
-  margin-left: 3px;
+  padding-left: 5px;
+  box-sizing: border-box;
 }
 
 .copyright-link svg {
-  fill: #231f20;
-  margin-top: 5px;
+  margin-top: 6px;
+  margin-left: 8px;
 }
 
 .copyright-link svg:hover {
