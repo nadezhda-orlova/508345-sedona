@@ -497,7 +497,32 @@ input[type="radio"].visually-hidden {
   margin-top: 23px;
 }
 
-.hotel-search a {
+.hotel-search .search-button {
+  vertical-align: middle;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #766357;
+  margin-top: 48px;
+  padding: 30px 117px;
+  border: none;
+  text-transform: uppercase;
+}
+/*переделала ссылку на кнопку и теперь в кнопке не совпадает текст с макетом*/
+
+.hotel-search .search-button:hover {
+background-color: #604e43;
+}
+
+.hotel-search .search-button:active {
+color: rgba(255, 255, 255, 0.3);
+background-color: #503e33;
+}
+
+
+
+/*.hotel-search a {
   display:inline-block;
   vertical-align: middle;
   box-sizing: border-box;
@@ -517,7 +542,7 @@ background-color: #604e43;
 .hotel-search a:active {
 color: rgba(255, 255, 255, 0.3);
 background-color: #503e33;
-}
+}*/
 
 .modal-search {
   line-height: 26px;
@@ -536,12 +561,59 @@ background-color: #503e33;
 .modal-search p {
   margin: 0;
   margin-bottom: 30px;
+
 }
+
+.data-box p {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+
+.data-box input::-webkit-input-placeholder {
+  color: #000000;
+}
+
+
+.data-box input:-moz-placeholder {
+  color: #000000;
+}
+
+
+.data-box input::-webkit-input-placeholder {
+ color: #000000;
+ opacity: 1;
+}
+.data-box input::-moz-placeholder {
+ color: #000000;
+ opacity: 1;
+}
+.data-box input:-moz-placeholder {
+ color: #000000;
+ opacity: 1;
+}
+.data-box input:-ms-input-placeholder {
+ color: #000000;
+ opacity: 1;
+}
+.data-box input:placeholder-shown {
+ color: #000000;
+ opacity: 1;
+}
+.data-box input::placeholder {
+ color: #000000;
+ opacity: 1;
+}
+
+
+
 
 
 .search .data {
   box-sizing: border-box;
   width: 346px;
+  height:38px;
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 13px;
@@ -550,23 +622,40 @@ background-color: #503e33;
   color: #000000;
   text-transform: uppercase;
   background-color:#f2f2f2;
-  background-image: url("../img/calendar.svg");
-  background-repeat: no-repeat;
-  background-position: 317px center;
   border:none;
 }
 
-.search .data-label-1 {
-  margin-right: 18px;
+
+.calendar {
+  position: absolute;
+  right: 0px;
+  width: 38px;
+  height: 38px;
+  background-color:transparent;
+  background-image: url("../img/calendar.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border:none;
 }
 
-.search .data-label-2 {
-  margin-right: 13px;
+.calendar:hover {
+  background-image: url("../img/calendar-hover.svg");
+}
+
+.calendar:active {
+  background-image: url("../img/calendar-active.svg");
+}
+
+
+
+.search label {
+  margin-left: 2px;
+  margin-right: auto;
 }
 
 .search .data:hover {
   background-color: #ebebeb;
-  background-image: url("../img/calendar-hover.svg");
+  
 }
 
 .search .data:focus {
@@ -578,10 +667,8 @@ background-color: #503e33;
 .search .data:active {
   background-color:#f2f2f2;
   outline: 2px solid #ebebeb;
-  background-image: url("../img/calendar-active.svg");
+  
 }
-
-
 
 .btn {
   font-size: 0;
@@ -590,13 +677,11 @@ background-color: #503e33;
   padding: 19px;
   background-color: #f2f2f2;
   position: relative;
-
 }
 
 
-
 .btn::before , .btn::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 18px;
   left: 13px;
@@ -656,7 +741,6 @@ background-color: #503e33;
   display: block;
   width: 100%;
   padding: 15px 0px;
-  
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -702,7 +786,8 @@ background-color:#669ec0;
 }
 
 .main-footer .footer-block {
-  width: 400px;
+  width: 33.3%;
+
 }
 
 
@@ -1088,16 +1173,7 @@ margin-left: 40px;
 }
 
 
-.sort a:hover {
-  color:#81b3d2;
-}
-
-.sort a:active {
-  color: #000000;
-  border-bottom: none;
-}
-
-.sort a:nth-child(3) {
+.sort button:nth-child(3) {
   margin-left: auto;
 }
 
@@ -1106,42 +1182,67 @@ margin-left: 40px;
   border: none;
 }
 
-.sort a:first-of-type {
-  margin-left:auto;
+.sort .ascending {
+margin-right: 10px;
 }
 
-.sort a:nth-of-type(2)  {
-  margin-right:60px;
+.sort .descending  {
+padding-left: 2px
 }
 
 .sort-buttons {
-  margin-left: auto; 
-  padding-right: 13px;*
-}
-
-.sort-buttons a {
-  display: inline-block;
-  vertical-align: center;
-}
-
-.ascending {
-  margin-right: 8px;
+  margin-left: auto;
+  margin-right: 75px;
 }
 
 
- .ascending svg,
- .descending svg {
-   fill:#cacaca;
- }
- 
- .ascending svg:hover,
- .descending svg:hover {
-   fill: #231f20;
- }
- 
- .ascending svg:active,
- .descending svg:active {
-   fill: #81b3d2;
+.sort-buttons button {
+  font-size: 0;
+  border: none;
+  border-radius: 0;
+  width:11px;
+  height:10px;
+  background-color: transparent;
+  position: relative;
+}
+
+.ascending::before {
+  content: "";
+  position: absolute;
+  bottom:0px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 5.5px 10px 5.5px;
+  border-color: transparent transparent #cacaca transparent;
+}
+
+.descending::before {
+  content: "";
+  position: absolute;
+  bottom:0px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 5.5px 0 5.5px;
+  border-color: #cacaca transparent transparent transparent;
+
+}
+
+.ascending:hover::before {
+  border-color: transparent transparent #000000 transparent;
+}
+
+.descending:hover::before {
+    border-color: #000000 transparent transparent transparent;
+}
+
+.ascending:active::before {
+  border-color: transparent transparent #81b3d2 transparent;
+}
+
+.descending:active::before {
+    border-color: #81b3d2 transparent transparent transparent;
 }
 
 .catalog-list {
