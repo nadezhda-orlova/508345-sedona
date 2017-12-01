@@ -128,17 +128,18 @@ input[type="radio"].visually-hidden {
 .intro {
   height: 508px;
   box-sizing: border-box;
-  margin-bottom: 0px;
-  padding: 76px 371px;
+  margin: auto;
+  padding-top: 76px;
   background:
   url("../img/mask.png") no-repeat 50% 100%, 
   url("../img/background-photo.jpg") no-repeat 50% 21%;
   background-color: #aecce0;  
 }
 
-.intro img {
+.intro div {
   height: 352px;
   width: 458px;
+  margin: auto;
 }
 
 .description {
