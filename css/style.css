@@ -498,25 +498,25 @@ input[type="radio"].visually-hidden {
   margin-top: 23px;
 }
 
-.hotel-search .search-button {
+.hotel-search a {
+  display:inline-block;
   vertical-align: middle;
+  box-sizing: border-box;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   color: #ffffff;
   background-color: #766357;
   margin-top: 48px;
-  padding: 30px 117px;
-  border: none;
-  text-transform: uppercase;
+  padding: 30px 140px;
 }
 
-.hotel-search .search-button:hover {
+.hotel-search a:hover {
   background-color: #604e43;
   cursor:pointer;
 }
 
-.hotel-search .search-button:active {
+.hotel-search a:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
 }
@@ -602,6 +602,7 @@ input[type="radio"].visually-hidden {
 .calendar {
   position: absolute;
   right: 0px;
+  top: 0px;
   width: 38px;
   height: 38px;
   background-color:transparent;
@@ -741,9 +742,9 @@ input[type="radio"].visually-hidden {
 }
 
 .map iframe {
-  width: 100%;
-  height: 473px;
-  border: 0;
+  width:100%;
+  height:473px;
+  border:0;
 }
 
 .main-footer {
