@@ -126,14 +126,14 @@ input[type="radio"].visually-hidden {
 }
 
 .intro {
-  height: 508px;
+  min-height: 508px;
   box-sizing: border-box;
   margin: auto;
   padding-top: 76px;
   background:
   url("../img/mask.png") no-repeat 50% 100%, 
   url("../img/background-photo.jpg") no-repeat 50% 21%;
-  background-color: #aecce0;  
+  background-color: #aecce0;
 }
 
 .intro div {
@@ -203,7 +203,7 @@ input[type="radio"].visually-hidden {
   margin-top: 46px;
   font-size: 21px;
   line-height: 21px;
-  font-weight:700;
+  font-weight: 700;
   color: #ffffff;
 }
 
@@ -239,7 +239,7 @@ input[type="radio"].visually-hidden {
   flex-direction: row;
   flex-wrap: wrap;
   margin-bottom: 0px;
-  min-height:330px;
+  min-height: 330px;
 }
 
 .detail-1,
@@ -273,8 +273,8 @@ input[type="radio"].visually-hidden {
 .detail-1 h4::before {
   content: "";
   position: absolute;
-  bottom:50px;
-  left:162px;
+  bottom: 50px;
+  left: 162px;
   background: url("../img/icon-1.svg");
   background-repeat: no-repeat;
   width: 75px;
@@ -284,8 +284,8 @@ input[type="radio"].visually-hidden {
 .detail-2 h4::before {
   content: "";
   position: absolute;
-  bottom:51px;
-  left:161px;
+  bottom: 51px;
+  left: 161px;
   background: url("../img/icon-3.svg");
   background-repeat: no-repeat;
   width: 74px;
@@ -295,8 +295,8 @@ input[type="radio"].visually-hidden {
 .detail-3 h4::before {
   content: "";
   position: absolute;
-  bottom:50px;
-  left:168px;
+  bottom: 50px;
+  left: 168px;
   background: url("../img/icon-2.svg");
   background-repeat: no-repeat;
   width: 64px;
@@ -510,7 +510,6 @@ input[type="radio"].visually-hidden {
   border: none;
   text-transform: uppercase;
 }
-/*переделала ссылку на кнопку и теперь в кнопке не совпадает текст с макетом*/
 
 .hotel-search .search-button:hover {
   background-color: #604e43;
@@ -532,7 +531,7 @@ input[type="radio"].visually-hidden {
   box-sizing: border-box;
   padding: 55px 55px;
   position:absolute;
-  left:50%;
+  left: 50%;
   margin-left: -284px;
 }
 
@@ -556,32 +555,33 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-search input::-webkit-input-placeholder {
- color: #000000;
- opacity: 1;
+  color: #000000;
+  opacity: 1;
 }
 
 .modal-search input::-moz-placeholder {
- color: #000000;
- opacity: 1;
+  color: #000000;
+  opacity: 1;
 }
 
 .modal-search input:-moz-placeholder {
- color: #000000;
- opacity: 1;
+  color: #000000;
+  opacity: 1;
 }
 
 .modal-search input:-ms-input-placeholder {
- color: #000000;
- opacity: 1;
+  color: #000000;
+  opacity: 1;
 }
 
 .modal-search input:placeholder-shown {
- color: #000000;
- opacity: 1;
+  color: #000000;
+  opacity: 1;
 }
+
 .modal-search input::placeholder {
- color: #000000;
- opacity: 1;
+  color: #000000;
+  opacity: 1;
 }
 
 .search .data {
@@ -892,11 +892,6 @@ input[type="radio"].visually-hidden {
   left: -40px;
 }
 
-.filter .fieldset {
-  border: none;
-  box-sizing: border-box;
-}
-
 .filter .fieldset-1 {
   width: 180px;
   margin-left: 60px;
@@ -921,11 +916,11 @@ input[type="radio"].visually-hidden {
 }
 
 .fieldset-1 h3 {
-padding-left:12px;
+  padding-left:12px;
 }
 
 .fieldset-2 h3 {
-padding-left:21px;
+  padding-left:21px;
 }
 
 .filter p {
@@ -935,11 +930,11 @@ padding-left:21px;
 }
 
 .fieldset-1 p {
-padding-left:50px;
+  padding-left:50px;
 }
 
 .fieldset-2 p {
-padding-left:62px;
+  padding-left:62px;
 }
 
 .filter-range {
@@ -1154,11 +1149,11 @@ margin-left: 40px;
 }
 
 .sort .ascending {
-margin-right: 10px;
+  margin-right: 10px;
 }
 
 .sort .descending  {
-padding-left: 2px
+  padding-left: 2px
 }
 
 .sort-buttons {
@@ -1277,15 +1272,15 @@ padding-left: 2px
 }
 
 .catalog-item:nth-child(2) b{
- margin-right:60px;
+  margin-right:60px;
 }
 
 .catalog-item:nth-child(3) b{
- margin-right:17px;
+  margin-right:17px;
 }
 
 .catalog-item p {
- margin-top:6px;
+  margin-top:6px;
 }
 
 .catalog-item-reserve a {
