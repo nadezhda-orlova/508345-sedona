@@ -133,15 +133,19 @@
             <div class="counter-box">
               <div class="counter">
                 <label class="adults" for="search-adults">Взрослые:</label>
-                <button type="button" class="btn minus"><span class="visually-hidden">меньше</span></button>
+                <!-- <button type="button" class="btn minus"><span class="visually-hidden">меньше</span></button> -->
+                <button type="button" class="btn minus" aria-label="меньше">−</button>
                 <input type="text" class="people-amount" id="search-adults" name="adults" placeholder="2">
-                <button type="button" class="btn plus"><span class="visually-hidden">больше</span></button>
+                <button type="button" class="btn plus" aria-label="больше">+</button>
+                <!-- <button type="button" class="btn plus"><span class="visually-hidden">больше</span></button> -->
               </div>
               <div class="counter">
                 <label class="children" for="search-children">Дети:</label>
-                <button type="button" class="btn minus"><span class="visually-hidden">меньше</span></button>
+                <!-- <button type="button" class="btn minus"><span class="visually-hidden">меньше</span></button> -->
+                <button type="button" class="btn minus" aria-label="меньше">−</button>
                 <input type="text" class="people-amount" id="search-children" name="children" placeholder="0">
-                <button type="button" class="btn plus"><span class="visually-hidden">больше</span></button>
+                <button type="button" class="btn plus" aria-label="больше">+</button>
+                <!-- <button type="button" class="btn plus"><span class="visually-hidden">больше</span></button> -->
               </div>
             </div>
             <button type="submit">Найти</button>
