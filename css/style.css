@@ -498,10 +498,11 @@ input[type="radio"].visually-hidden {
   margin-top: 23px;
 }
 
-.hotel-search a {
+.hotel-search .search-button {
   display:inline-block;
   vertical-align: middle;
   box-sizing: border-box;
+  font: inherit;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -509,14 +510,16 @@ input[type="radio"].visually-hidden {
   background-color: #766357;
   margin-top: 48px;
   padding: 30px 140px;
+  border:none;
+  text-transform: uppercase;
 }
 
-.hotel-search a:hover {
+.hotel-search .search-button:hover {
   background-color: #604e43;
   cursor:pointer;
 }
 
-.hotel-search a:active {
+.hotel-search .search-button:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
 }
@@ -642,7 +645,6 @@ input[type="radio"].visually-hidden {
 }
 
 .btn {
-  font-size: 0;
   border: none;
   border-radius: 0;
   padding: 19px;
@@ -738,12 +740,12 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
   display: flex;
   margin-bottom: 0px;
-  min-height: 473px;
+  min-height: 593px;
 }
 
 .map iframe {
   width:100%;
-  height:473px;
+  height:593px;
   border:0;
 }
 
@@ -753,6 +755,16 @@ input[type="radio"].visually-hidden {
   min-height: 120px;
   background-color: rgba(255, 255, 255, 0.9);
 }
+
+.main-footer.index {
+  margin: 0 auto;
+  margin-top: -120px;
+  position: relative;
+  display: flex;
+  min-height: 120px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
 
 .main-footer .footer-block {
   width: 33.3%;
@@ -842,6 +854,7 @@ input[type="radio"].visually-hidden {
   background-image:url("../img/filter-background.jpg");
   background-repeat: no-repeat;
   background-position: 50% 21%;
+  background-color: #aecce0;
   min-height: 217px;
   display: flex;
   flex-direction: row;
@@ -1171,7 +1184,6 @@ margin-left: 40px;
 }
 
 .sort-buttons button {
-  font-size: 0;
   border: none;
   border-radius: 0;
   width:11px;
@@ -1298,6 +1310,7 @@ margin-left: 40px;
 
 .catalog-item-reserve a {
   display:inline-block;
+  vertical-align: middle;
   margin-top: 7px;
   padding: 2px 16px;
   margin-left: 1px;
@@ -1346,7 +1359,8 @@ margin-left: 40px;
   color: #666666;
   background-color: #f2f2f2;
   display:inline-block;
-  margin-top: 42px;
+  vertical-align: middle;
+  margin-top: 48px;
   margin-left: 18px;
   padding: 2px 13px;
 }
@@ -1365,6 +1379,7 @@ margin-left: 40px;
   background-image: url("../img/star.svg");
   background-repeat:no-repeat;
   display: inline-block;
+  vertical-align: middle;
   margin-top: 29px;
   padding: 0px;
 }

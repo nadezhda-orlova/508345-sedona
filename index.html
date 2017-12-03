@@ -113,7 +113,7 @@
           <h2 class="visually-hidden">Поиск гостиницы</h2>
           <p class="question">Заинтересовались?</p>
           <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a class="search-link active" href="#">Поиск гостиницы в Седоне</a>
+          <button class="search-button" type="button">Поиск гостиницы в Седоне</button>
         </section>
         <div class="modal modal-search">
           <h3 class="visually-hidden">Форма поиска</h3>
@@ -122,26 +122,26 @@
               <p>
                 <label for="search-arrival">Дата заезда:</label>
                 <input class="data" type="text" name="arrival" id="search-arrival" placeholder="24 апреля 2017">
-                <button class="calendar" type="button"></button>
+                <button class="calendar" type="button"><span class="visually-hidden">Календарь</span></button>
               </p>
               <p>
                 <label for="search-departure">Дата выезда:</label>
                 <input  class="data" type="text" name="departure" id="search-departure" placeholder="4 июля 2017">
-                <button class="calendar" type="button"></button>
+                <button class="calendar" type="button"><span class="visually-hidden">Календарь</span></button>
               </p>
             </div>
             <div class="counter-box">
               <div class="counter">
                 <label class="adults" for="search-adults">Взрослые:</label>
-                <button type="button" class="btn minus">меньше</button>
+                <button type="button" class="btn minus"><span class="visually-hidden">меньше</span></button>
                 <input type="text" class="people-amount" id="search-adults" name="adults" placeholder="2">
-                <button type="button" class="btn plus">больше</button>
+                <button type="button" class="btn plus"><span class="visually-hidden">больше</span></button>
               </div>
               <div class="counter">
                 <label class="children" for="search-children">Дети:</label>
-                <button type="button" class="btn minus">меньше</button>
+                <button type="button" class="btn minus"><span class="visually-hidden">меньше</span></button>
                 <input type="text" class="people-amount" id="search-children" name="children" placeholder="0">
-                <button type="button" class="btn plus">больше</button>
+                <button type="button" class="btn plus"><span class="visually-hidden">больше</span></button>
               </div>
             </div>
             <button type="submit">Найти</button>
@@ -153,7 +153,7 @@
           </iframe>
         </section>
       </main>
-      <footer class="main-footer">
+      <footer class="main-footer index">
         <div class="footer-block hashtag">
           <b>#visitsedona</b>
         </div>
