@@ -746,14 +746,9 @@ input[type="radio"].visually-hidden {
 }
 
 .main-footer.index {
-  margin: 0 auto;
   margin-top: -120px;
   position: relative;
-  display: flex;
-  min-height: 120px;
-  background-color: rgba(255, 255, 255, 0.9);
 }
-
 
 .main-footer .footer-block {
   width: 33.3%;
@@ -807,7 +802,7 @@ input[type="radio"].visually-hidden {
   fill:#ffffff;
 }
 
-.social-link svg:active {
+.social-link:active svg {
   fill:rgba(255, 255, 255, 0.3);
 }
 
@@ -826,11 +821,11 @@ input[type="radio"].visually-hidden {
   margin-left: 8px;
 }
 
-.copyright-link svg:hover {
+.copyright-link:hover {
   fill: #81b3d2;
 }
 
-.copyright-link svg:active {
+.copyright-link:active svg {
   fill: #bdbbbc;
 }
 
@@ -903,11 +898,13 @@ input[type="radio"].visually-hidden {
 
 .filter .fieldset-1 {
   width: 180px;
+  min-height: 217px;
   margin-left: 60px;
 }
 
 .filter .fieldset-2 {
   width: 180px;
+  min-height: 217px;
   margin-left: 65px;
 }
 
