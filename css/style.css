@@ -658,12 +658,12 @@ input[type="radio"].visually-hidden {
 }
 
 .btn:hover{
-  background-color: #000000;
+  color: #000000;
   cursor:pointer;
 }
 
 .btn:active {
-  background-color: #81b3d2;
+  color: #81b3d2;
 }
 
 .people-amount {
