@@ -1142,7 +1142,7 @@ margin-left: 40px;
   border-bottom: none;
 }
 
-.sort .price-active {
+.sort .sort-active {
   color:#81b3d2;
   border-bottom: none;
 }
@@ -1218,11 +1218,11 @@ margin-left: 40px;
   border-color: #81b3d2 transparent transparent transparent;
 }
 
-.ascending.current-triangle::before {
+.triangle-current:first-child::before {
   border-color: transparent transparent #81b3d2 transparent;
 }
 
-.descending.current-triangle::before {
+.triangle-current:nth-child(2)::before {
   border-color: #81b3d2 transparent transparent transparent;
 }
 
