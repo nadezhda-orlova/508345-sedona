@@ -8,15 +8,16 @@ var storedArrival = localStorage.getItem("arrival");
 var storedDeparture = localStorage.getItem("departure");
 var storedAdults = localStorage.getItem("adults");
 var storedChildren = localStorage.getItem("children");
-if (form) {
-	form.style.display = "none";
-}
+
 button.addEventListener("click", function(){
 	if ( form.style.display === "none" ) {
 		form.style.display = "block";
+		form.classList.add("modal-search-rollout")
 	} else {
 		form.style.display = "none";
-	}
+		form.classList.remove("modal-error");
+		form.classList.remove("modal-search-rollout")
+	};
 	if (storedArrival) {
 		arrival.value = storedArrival;
 	}
@@ -53,9 +54,11 @@ form.addEventListener("keydown", function (evt) {
 	if (evt.keyCode === 27) {
 		if ( form.style.display === "none" ) {
 			form.style.display = "block";
+			form.classList.add("modal-search-rollout")
 		} else {
 			form.style.display = "none";
 			form.classList.remove("modal-error");
+			form.classList.remove("modal-search-rollout")
 		};
-	}
+	};
 });
