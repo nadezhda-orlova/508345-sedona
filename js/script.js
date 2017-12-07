@@ -37,7 +37,6 @@ button.addEventListener("click", function(){
 	} else {
 		arrival.focus();
 	}
-
 });
 form.addEventListener("submit", function(evt){
 	if (!((arrival.value) && (departure.value) && (adults.value))) {
