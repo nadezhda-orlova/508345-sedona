@@ -8,7 +8,9 @@ var storedArrival = localStorage.getItem("arrival");
 var storedDeparture = localStorage.getItem("departure");
 var storedAdults = localStorage.getItem("adults");
 var storedChildren = localStorage.getItem("children");
-
+if (form) {
+	form.style.display = "none"
+};
 button.addEventListener("click", function(){
 	if ( form.style.display === "none" ) {
 		form.style.display = "block";
